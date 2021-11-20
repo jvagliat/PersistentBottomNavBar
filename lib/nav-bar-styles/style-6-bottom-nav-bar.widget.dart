@@ -48,6 +48,7 @@ class _BottomNavStyle6State extends State<BottomNavStyle6>
 
   Widget _buildItem(PersistentBottomNavBarItem item, bool isSelected,
       double? height, int itemIndex) {
+    height=height!*2;
     return widget.navBarEssentials!.navBarHeight == 0
         ? SizedBox.shrink()
         : AnimatedBuilder(
@@ -140,7 +141,7 @@ class _BottomNavStyle6State extends State<BottomNavStyle6>
                 widget.navBarEssentials!.itemAnimationProperties?.duration ??
                     Duration(milliseconds: 400),
             vsync: this));
-        _animationList.add(Tween(begin: 0.95, end: 1.18)
+        _animationList.add(Tween(begin: 0.95, end: 2.58)
             .chain(CurveTween(
                 curve:
                     widget.navBarEssentials!.itemAnimationProperties?.curve ??
